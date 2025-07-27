@@ -41,7 +41,7 @@ public class CSVReaderPreview {
             // Print first 5 records
             while ((line = br.readLine()) != null && count < 5) {
                 String[] fields = line.split(sep);
-                System.out.println(String.join(" ", fields));
+                System.out.println(String.join("\t", fields));
                 count++;
             }
 
